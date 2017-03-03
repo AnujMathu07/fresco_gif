@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdvImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#AAAAAA"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible"
+            app:actualImageScaleType="none"
+            app:failureImageScaleType="none"
+            app:placeholderImageScaleType="none" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#AAAAAA"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnResize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="    Resize    " />
+</RelativeLayout>
